@@ -1,0 +1,61 @@
+name: recycle_app
+description: "A new Flutter project."
+
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  intl: ^0.18.1
+  file_picker: ^8.0.0
+  cupertino_icons: ^1.0.8
+  firebase_auth: ^6.4.0
+  firebase_core: ^4.7.0
+  image_picker: ^1.2.1
+  url_launcher: ^6.3.2
+  http: ^1.6.0
+  flutter_dotenv: ^5.2.1
+  uuid: ^4.5.3
+  shared_preferences: ^2.5.5
+  cloud_firestore: ^6.3.0
+  firebase_storage: ^13.3.0
+  video_player: ^2.11.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_launcher_icons: ^0.13.1
+  flutter_lints: ^6.0.0
+  flutter_native_splash: ^2.4.0
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/icon.png"
+
+flutter_native_splash:
+  color: "#ffffff" # background color
+  image: assets/icon.png
+
+  color_dark: "#000000"
+  image_dark: assets/icon.png
+
+  android: true
+  ios: true
+
+  android_gravity: center
+  ios_content_mode: center
+
+  fullscreen: true
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/icon.png
+    - .env
